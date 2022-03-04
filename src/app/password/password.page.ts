@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
-import { HomePage } from '../home/home.page';
 
 @Component({
   selector: 'app-password',
