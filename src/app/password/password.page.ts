@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { HomePage } from '../home/home.page';
 
 @Component({
   selector: 'app-password',
@@ -29,6 +30,7 @@ export class PasswordPage implements OnInit {
     alert("Registration Success");
     console.log(this.passwordForm.value);
     this.passwordForm.reset();
+    window.history.back();
   }
   get password() {
     return this.passwordForm.get('password');
